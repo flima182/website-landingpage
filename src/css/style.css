@@ -265,3 +265,100 @@ footer {
     border-color: #339;
 }
 
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    #banner {
+        flex-direction: column;
+    }
+
+    #texto-banner {
+        order: -1;
+    }
+
+    #services,
+    #sectors {
+        flex-direction: column;
+    }
+
+    #cards,
+    #cards-sectors {
+        margin: 20px 0;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    #texto-banner {
+        padding: 10px;
+    }
+
+    #map {
+        padding: 10px 0;
+    }
+
+    .gmap_canvas iframe {
+        height: 300px;
+
+        #cards,
+        #cards-sectors {
+            margin: 10px 0;
+            padding: 10px;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1201px) {
+    header {
+        text-align: left;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav a {
+        margin: 0 15px;
+    }
+
+    #banner {
+        flex-direction: row;
+    }
+
+    #texto-banner {
+        order: 0;
+    }
+
+    #cards,
+    #cards-sectors {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
