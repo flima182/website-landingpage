@@ -18,7 +18,7 @@ body {
 
 header {
     display: flex;
-    
+
     justify-content: space-between;
     align-items: center;
     padding: 22px 25px 32px;
@@ -227,3 +227,41 @@ footer {
     align-items: center;
     padding: 32px 16px;
 }
+
+.parent {
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.draggable {
+    border: 1px solid #efefef;
+    background-color: #ddd;
+    cursor: grab;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.dropzone {
+    border: 2px dashed #ddd;
+    background-color: #eee;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.dropzone:hover {
+    border-color: #339;
+}
+

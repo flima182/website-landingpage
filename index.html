@@ -52,6 +52,29 @@
 
         </section>
 
+        <section>
+            <h2>Seção Drag and drop</h2>
+
+            <div class="parent">
+                <div class="origin dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
+                    <h4>A fazer</h4>
+                    <div id="drag-1" class="draggable" draggable="true" ondragstart="dragStart(event)">Exemplo 1
+                    </div>
+                    <div id="drag-2" class="draggable" draggable="true" ondragstart="dragStart(event)">Exemplo 2
+                    </div>
+                    <div id="drag-3" class="draggable" draggable="true" ondragstart="dragStart(event)">Exemplo 3
+                    </div>
+                </div>
+                <div class="dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
+                    <h4>Fazendo</h4>
+                </div>
+                <div class="dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
+                    <h4>Feito</h4>
+                </div>
+            </div>
+
+        </section>
+
         <section id="map">
             <h2>Localização</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quaerat. Voluptatibus doloremque
